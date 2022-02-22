@@ -21,7 +21,9 @@ int main(void)
     epit1_init(0,66000000/100);/*初始化定时器1,1分频66MHz,定时时间为10ms,用于按键消抖*/
     while(1)
     {
-        delay_ms(500);
+        led_state = !led_state;
+        led_switch(LED0,led_state);
+        delay_ms(100);
     }
     return 0;
 }

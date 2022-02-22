@@ -1,6 +1,0 @@
-{
-    "files.associations": {
-        "bsp_delay.h": "c",
-        "bsp_int.h": "c"
-    }
-}

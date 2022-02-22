@@ -22,7 +22,7 @@ int get_key_value(void)
     static unsigned char key_release = 1;/*按键释放状态，默认释放*/
     if((key_release==1) && (gpio_pin_read(GPIO1, 18)==0))/*按键按下*/
     {
-        delay_ms(10);
+        delay_ms_nop(10);
         key_release = 0;
         if(gpio_pin_read(GPIO1, 18)==0)/*延时10ms后，GPIO引脚依然被拉低*/
         {
