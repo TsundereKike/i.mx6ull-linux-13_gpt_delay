@@ -1,5 +1,5 @@
 CROSS_COPILE ?= arm-linux-gnueabihf-
-TARGET 		 ?= key_debounce
+TARGET 		 ?= gpt_delay
 
 CC			 := $(CROSS_COPILE)gcc
 LD			 := $(CROSS_COPILE)ld
